@@ -49,6 +49,9 @@ window.addEventListener('load', () => {
     currentData = paginatedData;
     createHead();
     fillTable(paginatedData[currentPage]);
+    sortLengthButton.disabled = false;
+    nextPageButton.disabled = false;
+    prevPageButton.disabled = false;
   });
 
   sortLengthButton.addEventListener('click', (event) => {
