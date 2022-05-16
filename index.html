@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/default.css" />
+    <title>Poem Discovery Tool</title>
+  </head>
+  <body>
+    <h1>Discover Poetry</h1>
+    <p>Welcome to a frontend for poetrydb!</p>
+    <p>
+      Click the "Load" button to load random poetry. The "Sort by Length" button
+      sorts the poems by length. Click on a poem title to load the poem under
+      the table.
+    </p>
+    <button id="randomFetch">Load</button>
+    <button id="sortByLen">Sort by Length</button>
+    <div>
+      <table id="mainTable"></table>
+    </div>
+    <div class="controls">
+      <button id="prevPageButton">Previous Page</button>
+      <button id="nextPageButton">Next Page</button>
+    </div>
+    <p id="poemBody"></p>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

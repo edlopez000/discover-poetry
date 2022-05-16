@@ -1,0 +1,30 @@
+body {
+  background-color: aliceblue;
+  text-align: center;
+}
+
+table {
+  display: table-header-group;
+}
+
+thead {
+  font-weight: bold;
+}
+
+tr {
+  outline: 1px black;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+}
+
+.controls {
+  display: block;
+  position: inherit;
+}
+
+th, td {
+  border: 1px solid;
+}
