@@ -17,3 +17,6 @@ Areas for improvement:
 - JSDOC comments rather than what is currently commented
 - Formatting poem text so the line breaks appear typically indicated by a `,` character
 - Pagination could have be implemented with a class
+- Making this a legitimate website with a bunch of discovery features like the ones listed below:
+  - Wikipedia image of the author could show up as well as a little blurb
+  - Additional context if the poem is part of a longer narrative or book
