@@ -16,12 +16,14 @@ window.addEventListener('load', () => {
 
   // Fetching data from API
   async function fetchPoemBody(title) {
-    return await fetch(`https://poetrydb.org/title/${title}`)
+    return await fetch(
+      `https://poetrydb.org/title/${title}:abs/author,title,lines`
+    )
       .then((res) => {
         return res.json();
       })
       .then((data) => {
-        return data[0].lines.toString();
+        return data[0].lines;
       });
   }
 
@@ -142,7 +144,12 @@ window.addEventListener('load', () => {
 
   async function setPoemBody(poem) {
     poemBody = document.getElementById('poemBody');
-    poemBody.textContent = await poem;
+    currentPoem = await poem;
+    let formattedPoem = currentPoem.reduce(
+      (prev, curr) => prev + '<br/>' + curr
+    );
+    console.log(formattedPoem);
+    poemBody.innerHTML = formattedPoem;
   }
 
   function prevPage() {
